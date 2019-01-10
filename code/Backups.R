@@ -37,7 +37,9 @@ aggregate(Backups$GSAA5v5, by=list(Backups$PlayoffF), mean)
 aggregate(Backups$GSAA5v5, by=list(Backups$PlayoffF), sd)
 leveneTest(GSAA5v5 ~ PlayoffF, data = Backups) # homogeneity of variance
 t.test(GSAA5v5 ~ PlayoffF, data = Backups)
-plot(Backups$PlayoffF, Backups$GSAA5v5)
+plot(Backups$PlayoffF, Backups$GSAA5v5,
+     xlab = "Playoff Appearance", ylab = "GSAA at 5v5",
+     main = "Effect of GSAA on Making Playoffs")
 cohensD(GSAA5v5 ~ PlayoffF, data = Backups)
 # Pretty moderate effect size
 
@@ -46,7 +48,10 @@ aggregate(Backups$dSVperc, by=list(Backups$PlayoffF), mean)
 aggregate(Backups$dSVperc, by=list(Backups$PlayoffF), sd)
 leveneTest(dSVperc ~ PlayoffF, data = Backups) # homogeneity of variance
 t.test(dSVperc ~ PlayoffF, data = Backups)
-plot(Backups$PlayoffF, Backups$dSVperc)
+plot(Backups$PlayoffF, Backups$dSVperc,
+     xlab = "Playoff Appearance", ylab = "dSV% at 5v5",
+     main = "Effect of dSV% on Making Playoffs",
+     sub = "dSV% = difference between expected and actual save percentage")
 cohensD(dSVperc ~ PlayoffF, data = Backups)
 
 # How important is goal support?
@@ -54,7 +59,9 @@ aggregate(Backups$Gsupp, by=list(Backups$PlayoffF), mean)
 aggregate(Backups$Gsupp, by=list(Backups$PlayoffF), sd)
 leveneTest(Gsupp ~ PlayoffF, data = Backups) # homogeneity of variance
 t.test(Gsupp ~ PlayoffF, data = Backups)
-plot(Backups$PlayoffF, Backups$Gsupp)
+plot(Backups$PlayoffF, Backups$Gsupp,
+     xlab = "Playoff Appearance", ylab = "Goal Support",
+     main = "Effect of Goal Support on Making Playoffs")
 cohensD(Gsupp ~ PlayoffF, data = Backups)
 # Higher effect size than the other two
 
