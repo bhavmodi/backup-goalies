@@ -40,4 +40,5 @@ Pearson's correlation was used to determine the relationship between backup goal
 
 These results corroborate the earlier findings that backup goalie performance matters for team success. Generally, teams that have stronger backup goaltenders perform better in the standings.
 
+---
 Credit to [corsica.hockey](https://corsicahockey.com) and [Hockey Abstract](http://www.hockeyabstract.com/) for their data.
