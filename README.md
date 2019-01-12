@@ -28,3 +28,14 @@ Next, I had to determine what defined "team success". In general, a team's seaso
 
 ### Analysis
 First, GSAA and dSV% for backup goalies were compared across backup goalies whose teams made the playoffs and those who did not. GSAA for backup goalies who did not make the playoffs (M = -2.14, SD = 6.01) was significantly lower than GSAA for backup goalies that did make the playoffs (M = 1.63, SD = 6.83), *t*(106.74) = -3.09, *p* < .01. Additionally, dSV% for backups who did not make the playoffs  (M = -0.38, SD = 1.14) was also significantly lower than dSV% for backups who made the playoffs (M = 0.21, SD = 1.36), *t*(105) = -2.47, *p* < .05.
+
+![](https://i.imgur.com/3RiMG8m.png)
+
+As displayed in the plots and analysis above, backup goaltender performance does have an impact on whether or not a team makes a playoff. Backup goalies on teams who make the playoffs have better GSAA and dSV%.
+
+While the dichotomous variable of whether or not a team makes the playoffs provides meaningful information for team performance, it does not differentiate between teams within the two categories. The best team in the NHL and the worst team which made the playoffs are viewed as the same. We can use team points to better articulate team success.  
+Pearson's correlation was used to determine the relationship between backup goalie performance and team points. A significant moderate correlation was found between GSAA and team points, *r* = .25, *p* < .01, and between dSV% and team points, *r* = 0.36, *p* < .001. 
+
+![](https://github.com/bhavmodi/backup-goalies/raw/master/plots/scatterplot-backups.png)
+
+These results corroborate the earlier findings that backup goalie performance matters for team success. Generally, teams that have stronger backup goaltenders perform better in the standings.
