@@ -17,7 +17,7 @@ This statistic puts all goalies on an equal footing and removes the effect of te
 [corsica.hockey](https://www.corsicahockey.com/nhl/players/nhl-player-stats/goalie-stats) calculates GSAA for all goalies in the NHL, and their model incorporates shot quality as well as shot quantity. Hence, high-danger shots, or shots that have a much higher percentage of scoring, are weighted more. A goalie who saves more high-danger shots is better than a goalie who faces and saves medium- or low-danger shots, which is reflected in the GSAA.
 
 #### dSV%
-dSV% means Delta Save Percentage, or Adjusted Save Percentage. For each goalie, an expected save percentage (xSV%) is calculated based on the quality and quantity of shots they face. eSV% reflects how an average goalie in the league would perform given the number and quality of shots. The formula for dSV% is:
+dSV% means Delta Save Percentage, or Adjusted Save Percentage. For each goalie, an expected save percentage (xSV%) is calculated based on the quality and quantity of shots they face. eSV% reflects how an average goalie in the league would perform given the number and quality of shots. The formula for dSV% is:  
 `SV% - xSV%`  
 A positive dSV% means the goalie is performing above average, whereas a negative dSV% means the goalie is performing below average.  
 
@@ -39,3 +39,5 @@ Pearson's correlation was used to determine the relationship between backup goal
 ![](https://github.com/bhavmodi/backup-goalies/raw/master/plots/scatterplot-backups.png)
 
 These results corroborate the earlier findings that backup goalie performance matters for team success. Generally, teams that have stronger backup goaltenders perform better in the standings.
+
+Credit to [corsica.hockey](https://corsicahockey.com) and [Hockey Abstract](http://www.hockeyabstract.com/) for their data.
