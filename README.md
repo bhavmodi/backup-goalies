@@ -1,6 +1,6 @@
 # How important is a backup goalie for success in the NHL?
 
-The goaltender, or goalie, is arguably the most important position in hockey. They are relied upon as the last line of defense. They play the entire game, whereas no one skater will play more than half the game. Teams often have a starter and backup goalie, with the starter playing most of the games. The backup goalie can come in when the starting goalie needs rest or is injured. While teams emphasize the importance of locking down a good starting goalie (as exemplified by the massive contract given to Montreal Canadiens' #1 goalie Carey Price), are backups just as important? The following sets of analyses attempt to answer this question.
+The goalie is arguably the most important position in hockey. They are relied upon as the last line of defense. They play the entire game, whereas no one skater will play more than half the game. Teams often have a starter and backup goalie, with the starter playing most of the games. The backup goalie can come in when the starting goalie needs rest or is injured. While teams emphasize the importance of locking down a good starting goalie (as exemplified by the massive contract given to Montreal Canadiens' #1 goalie Carey Price), are backups just as important? The following sets of analyses attempt to answer this question.
 I will begin with a brief discussion of the statistics used in this project. 
 ### Goalie Statistics
 The process of analyzing goalies has the inherent challenge of parsing out individual goalie performance from team performance. Traditional goalie statistics are *save percentage (SV%)* and *Goals Against Average (GAA)*. 
@@ -17,7 +17,7 @@ This statistic puts all goalies on an equal footing and removes the effect of te
 [corsica.hockey](https://www.corsicahockey.com/nhl/players/nhl-player-stats/goalie-stats) calculates GSAA for all goalies in the NHL, and their model incorporates shot quality as well as shot quantity. Hence, high-danger shots, or shots that have a much higher percentage of scoring, are weighted more. A goalie who saves more high-danger shots is better than a goalie who faces and saves medium- or low-danger shots, which is reflected in the GSAA.
 
 #### dSV%
-dSV% means Delta Save Percentage, or Adjusted Save Percentage. For each goalie, an expected save percentage (xSV%) is calculated based on the quality and quantity of shots they face. eSV% reflects how an average goalie in the league would perform given the number and quality of shots. The formula for dSV% is:  
+dSV% means Delta Save Percentage, or Adjusted Save Percentage. For each goalie, an expected save percentage (xSV%) is calculated based on the quality and quantity of shots they face. dSV% reflects how an average goalie in the league would perform given the number and quality of shots. The formula for dSV% is:  
 `SV% - xSV%`  
 A positive dSV% means the goalie is performing above average, whereas a negative dSV% means the goalie is performing below average.  
 
